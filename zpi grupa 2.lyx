@@ -1,0 +1,585 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass csthesis
+\begin_preamble
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+\begin{spacing}{2.0}
+  \secfont
+  \setlength{\parindent}{0pt}
+  \begin{center}
+\textsc{\LARGE olsztyńska wyższa szkoła informatyki i zarządzania}\\
+{\Large im. Prof. Tadeusza Kotarbińskiego w Olsztynie}\\
+\textsc{\huge wydział informatyki i nauk technicznych}\\
+{\Large Kierunek: Informatyka}\\[2.0cm]
+\includegraphics[width=0.15\textwidth]{./logo.png}\\[2.5cm]
+{\LARGE\@author}\\[3.0cm]
+{\huge\@title}\\[3.0cm]
+  \end{center}
+
+  \vfill
+
+  \hfill\begin{minipage}{0.5\textwidth}
+\begin{flushleft}
+  {\large Zespołowe przedsięwzięcie inżynierskie wykonane pod kierunkiem dra inż. Marcina Korytkowskiego}
+\end{flushleft}
+  \end{minipage}
+
+  \vfill
+
+\end{spacing}
+\begin{center}
+  {\large Olsztyn \@date}
+\end{center}
+  \end{titlepage}
+  \clearpage
+}
+
+\pagenumbering{arabic}
+\end_preamble
+\use_default_options true
+\begin_removed_modules
+dcsthm
+\end_removed_modules
+\begin_modules
+dcs
+\end_modules
+\maintain_unincluded_children false
+\language polish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Internetowy system wspierający przeprowadzanie okresowych ocen nauczycieli
+ akademickich
+\end_layout
+
+\begin_layout Author
+Jakub Pastuszek, Adam Broda, Maciej Charniuk, Sebastian Gilon, Wojciech
+ Nowak
+\end_layout
+
+\begin_layout Date
+2012
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Wstęp
+\end_layout
+
+\begin_layout Chapter
+Cel
+\end_layout
+
+\begin_layout Standard
+Celem projektu jest stworzenie systemu który ma ułatwić przeprowadzanie
+ ankiet okresowych ocen nauczycieli akademickich oraz analizę ich wyniku.
+\end_layout
+
+\begin_layout Section
+Obecny proces
+\end_layout
+
+\begin_layout Standard
+Obecnie ankiety te przeprowadzane są przy pomocy wydrukowanych formularzy.
+ Formularze te rozdawane są przez wykładowców studentom którzy je wypełniają.
+ Wypełnione ankiety są zbierane oraz pakowane w kopertę.
+ Ta następnie jest dostarczana do działu studiów, który jest odpowiedzialny
+ za wykonanie żmudnej pracy zebrania danych z wypełnionych ankiet oraz wyliczeni
+e różnych statystyk na ich podstawie.
+\end_layout
+
+\begin_layout Section
+Proponowany proces
+\end_layout
+
+\begin_layout Standard
+Wykorzystując Internet uczniowie mogli by dokonywać oceny nauczycieli po
+ przez wypełnienie wcześniej przygotowanego formularza za pośrednictwem
+ przeglądarki internetowej.
+ System automatycznie zebrał by dane i dokonał stosownych obliczeń.
+ Odpowiednio przygotowany raport były by udostępniony dla autorów ankiety.
+\end_layout
+
+\begin_layout Standard
+Dzięki takiemu rozwiązaniu wyeliminowano by potrzebę żmudnej analizy zebranych
+ ankiet.
+\end_layout
+
+\begin_layout Chapter
+Wymagania
+\end_layout
+
+\begin_layout Enumerate
+System umożliwia zdefiniowanie ankiety zalogowanym użytkownikom
+\end_layout
+
+\begin_layout Enumerate
+Ankieta musi zawierać następujące informacje
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+nazwa
+\end_layout
+
+\begin_layout Enumerate
+data rozpoczęcia ankiety
+\end_layout
+
+\begin_layout Enumerate
+data zakończenia ankiety
+\end_layout
+
+\begin_layout Enumerate
+kierunek studiów
+\end_layout
+
+\begin_layout Enumerate
+zestaw pytań
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+System umożliwia dostęp studentom do ankiety za pośrednictwem kodu dostępu
+ wysłanego w wiadomości na adres e-mail
+\end_layout
+
+\begin_layout Enumerate
+Student wykorzystując przeglądarkę może wypełnić ankietę odpowiadając na
+ pytania
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+nazwa przedmiotu
+\end_layout
+
+\begin_layout Enumerate
+wykładowca
+\end_layout
+
+\begin_layout Enumerate
+liczba punktów od 1 do 5 na każde z pytań przypisanych ankiecie
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+System automatycznie podlicza liczbę głosów oddaną na każdą z możliwych
+ odpowiedzi każdego pytania
+\end_layout
+
+\begin_layout Enumerate
+Twórca ankiety może obejrzeć wykres przedstawiający wyniki ankiety
+\end_layout
+
+\begin_layout Enumerate
+System umożliwia zarządzanie użytkownikami i ich hasłami dostępu zalogowanym
+ użytkownikom
+\end_layout
+
+\begin_layout Enumerate
+System umożliwia zdefiniowanie listy dostępnych kierunków zalogowanym użytkownik
+om
+\end_layout
+
+\begin_layout Enumerate
+System umożliwia zdefiniowanie listy dostępnych przedmiotów zalogowanym
+ użytkownikom
+\end_layout
+
+\begin_layout Enumerate
+System umożliwia zdefiniowanie listy wykładowców zalogowanym użytkownikom
+\end_layout
+
+\begin_layout Enumerate
+System pozwala przypisać dowolnej liczby adresów e-mail do danego kierunku
+ zalogowanym użytkownikom
+\end_layout
+
+\begin_layout Enumerate
+System automatycznie rozsyła kody dostępu do wszystkich adresatów których
+ e-mail jest związany z kierunkiem uruchomionej ankiety
+\end_layout
+
+\begin_layout Enumerate
+System pozwala na jednokrotne uruchomienie ankiety przez zalogowanego użytkownik
+a
+\end_layout
+
+\begin_layout Enumerate
+Uruchomione ankiety nie mogą być modyfikowane
+\end_layout
+
+\begin_layout Enumerate
+Student może wypełnić ankietę tylko jeden raz
+\end_layout
+
+\begin_layout Part
+Architektura aplikacji
+\end_layout
+
+\begin_layout Chapter
+Wykorzystane technologie
+\end_layout
+
+\begin_layout Section
+PHP: Hypertext Preprocessor
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.php.net
+\end_layout
+
+\end_inset
+
+ (PHP)
+\end_layout
+
+\begin_layout Standard
+Jest to język skryptowy zaprojektowany specjalnie z myślą o generowaniu
+ stron HyperText Markup Language
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://en.wikipedia.org/wiki/HTML
+\end_layout
+
+\end_inset
+
+ (HTML).
+ Skrypty te można załączać wewnątrz kodu HTML.
+\end_layout
+
+\begin_layout Standard
+Z poziomu języka dostępnych jest wiele systemów bazodanowych, biblioteki
+ graficzne, szyfrowanie i inne przydatne narzędzia w budowie serwisów internetow
+ych.
+\end_layout
+
+\begin_layout Section
+MySQL
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.mysql.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+MySQL to bardzo popularna darmowa relacyjna baza danych SQL (Structured
+ Query Language
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://en.wikipedia.org/wiki/SQL
+\end_layout
+
+\end_inset
+
+).
+ Jest obsługiwana z poziomu języka PHP przez co jest często wykorzystywana
+ do przechowywania danych dla aplikacji internetowych napisanych w tym języku.
+\end_layout
+
+\begin_layout Section
+JQuery
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://jquery.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Popularna biblioteka JavaScript
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://en.wikipedia.org/wiki/JavaScript
+\end_layout
+
+\end_inset
+
+ (JS) ułatwiająca wykonywanie typowych operacji na modelu DOM (Document
+ Object Model
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://en.wikipedia.org/wiki/Document_Object_Model
+\end_layout
+
+\end_inset
+
+) dokumentu HTML.
+\end_layout
+
+\begin_layout Section
+Highcharts JS
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.highcharts.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rozbudowana biblioteka JS umożliwiająca przedstawianie danych numerycznych
+ w postaci rożnego rodzaju wykresów.
+ 
+\end_layout
+
+\begin_layout Section
+MooTools
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://mootools.net
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jest to biblioteka JS rozszerzjąca podstawowe możliwości języka JS.
+\end_layout
+
+\begin_layout Chapter
+Schemat bazy danych
+\end_layout
+
+\begin_layout Standard
+Centralną tabelą schematu bazy danych jest tabela 
+\noun on
+ankieta
+\noun default
+.
+ Zawiera definicję typu ankiety i składa się z kolumn takich jak nazwa ankiety,
+ data startu i końca ankiety.
+ 
+\end_layout
+
+\begin_layout Standard
+Z każdą ankietą związany jest użytkownik który ją stworzył.
+ 
+\end_layout
+
+\begin_layout Standard
+Każda ankieta zawiera 6 pytań.
+ Format pytań jest zdefiniowany za pomocą tabeli 
+\noun on
+element
+\noun default
+ po przez relacje wiele do wielu wykorzystując tabelę 
+\noun on
+ankieta_element
+\noun default
+.
+ Ta relacja umożliwia zdefiniowanie różnych elementów formularza HTML do
+ edycji odpowiedzi na pytania ankiety oraz łączy je z tekstem pytań.
+ 
+\end_layout
+
+\begin_layout Standard
+Tabela 
+\noun on
+kierunek
+\noun default
+ zawiera nazwy kierunków studiów i jej rekordy są powiązane z jedną lub
+ więcej ankietami.
+ Każdy kierunek może też być powiązany z wieloma adresami e-mail na które
+ będą wysłane kody dostępu do ankiety.
+ Adresy e-mail są zapisane w tabeli 
+\noun on
+miail
+\noun default
+.
+\end_layout
+
+\begin_layout Standard
+Tabele 
+\noun on
+przedmiot
+\noun default
+ oraz 
+\noun on
+wykladowca
+\noun default
+ zawierają listę nazw przedmiotów i imiona wykładowców.
+\end_layout
+
+\begin_layout Standard
+Tabela 
+\noun on
+uzytkownik
+\noun default
+ definiuje użytkowników oraz i hasła które umożliwiają im uwierzytelnienie
+ się z aplikacją.
+ Tabela ta zawiera dodatkowo kolumnę na informacje o ostatnim czasie zalogowania.
+ Hasła wpisywane przez użytkownika nie są bezpośrednio zapisane w tabeli.
+ Zamiast tego zapisane są wyniki funkcji skrótu w postaci szesnastkowej.
+\end_layout
+
+\begin_layout Standard
+Kody wysyłane do studentów są zapisane w tabeli 
+\noun on
+hash
+\noun default
+.
+ Każdy rekord w tej tabeli związany jest z jedną ankietą.
+ Umożliwia ona zalogowanie się studentowi posiadającemu wartość kodu do
+ systemu w celu wypełnienia ankiety.
+ Rekord po użyciu kodu jest usuwany co zapobiega wielokrotnemu wypełnieniu
+ ankiety przez studenta.
+\end_layout
+
+\begin_layout Standard
+Wynik odpowiedzi pojedynczego studenta są zapisywane w tabeli 
+\noun on
+ankieta_odp
+\noun default
+.
+ Aplikacja wyświetla agregację wartości z tej tabeli w postaci wykresu odpowiedz
+i na ankietę.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename model.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Schemat bazy danych
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Moduły aplikacji
+\end_layout
+
+\begin_layout Chapter
+Interfejs użytkownika
+\end_layout
+
+\end_body
+\end_document
