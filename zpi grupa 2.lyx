@@ -151,7 +151,10 @@ Obecny proces
 
 \begin_layout Standard
 Obecnie ankiety te przeprowadzane są przy pomocy wydrukowanych formularzy.
- Formularze te rozdawane są przez wykładowców studentom którzy je wypełniają.
+ Formularze te rozdawane są przez wykładowców studentom.
+ Studenci następnie anonimowo wypełniają informacje o przedmiocie, kierunku
+ studiów i wykładowcy oraz zaznaczają odpowiedzi na pytania w skali od 1
+ do 5.
  Wypełnione ankiety są zbierane oraz pakowane w kopertę.
  Ta następnie jest dostarczana do działu studiów, który jest odpowiedzialny
  za wykonanie żmudnej pracy zebrania danych z wypełnionych ankiet oraz wyliczeni
@@ -172,19 +175,22 @@ Wykorzystując Internet uczniowie mogli by dokonywać oceny nauczycieli po
 
 \begin_layout Standard
 Dzięki takiemu rozwiązaniu wyeliminowano by potrzebę żmudnej analizy zebranych
- ankiet.
+ ankiet i umożliwiono by wypełnienie ankiety przez studentów w dowolnym
+ miejscu i czasie.
 \end_layout
 
 \begin_layout Chapter
 Wymagania
 \end_layout
 
-\begin_layout Enumerate
-System umożliwia zdefiniowanie ankiety zalogowanym użytkownikom
+\begin_layout Labeling
+\labelwidthstring default
+Wy1 System umożliwia zdefiniowanie ankiety zalogowanym użytkownikom
 \end_layout
 
-\begin_layout Enumerate
-Ankieta musi zawierać następujące informacje
+\begin_layout Labeling
+\labelwidthstring default
+Wy2 Ankieta musi zawierać następujące informacje:
 \end_layout
 
 \begin_deeper
@@ -209,14 +215,16 @@ zestaw pytań
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-System umożliwia dostęp studentom do ankiety za pośrednictwem kodu dostępu
+\begin_layout Labeling
+\labelwidthstring default
+Wy3 System umożliwia dostęp studentom do ankiety za pośrednictwem kodu dostępu
  wysłanego w wiadomości na adres e-mail
 \end_layout
 
-\begin_layout Enumerate
-Student wykorzystując przeglądarkę może wypełnić ankietę odpowiadając na
- pytania
+\begin_layout Labeling
+\labelwidthstring default
+Wy4 Student wykorzystując przeglądarkę może wypełnić ankietę odpowiadając
+ na pytania
 \end_layout
 
 \begin_deeper
@@ -233,55 +241,66 @@ liczba punktów od 1 do 5 na każde z pytań przypisanych ankiecie
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-System automatycznie podlicza liczbę głosów oddaną na każdą z możliwych
+\begin_layout Labeling
+\labelwidthstring default
+Wy5 System automatycznie podlicza liczbę głosów oddaną na każdą z możliwych
  odpowiedzi każdego pytania
 \end_layout
 
-\begin_layout Enumerate
-Twórca ankiety może obejrzeć wykres przedstawiający wyniki ankiety
+\begin_layout Labeling
+\labelwidthstring default
+Wy6 Twórca ankiety może obejrzeć wykres przedstawiający wyniki ankiety
 \end_layout
 
-\begin_layout Enumerate
-System umożliwia zarządzanie użytkownikami i ich hasłami dostępu zalogowanym
+\begin_layout Labeling
+\labelwidthstring default
+Wy7 System umożliwia zarządzanie użytkownikami i hasłami dostępu zalogowanym
  użytkownikom
 \end_layout
 
-\begin_layout Enumerate
-System umożliwia zdefiniowanie listy dostępnych kierunków zalogowanym użytkownik
-om
-\end_layout
-
-\begin_layout Enumerate
-System umożliwia zdefiniowanie listy dostępnych przedmiotów zalogowanym
+\begin_layout Labeling
+\labelwidthstring default
+Wy8 System umożliwia zdefiniowanie listy dostępnych kierunków zalogowanym
  użytkownikom
 \end_layout
 
-\begin_layout Enumerate
-System umożliwia zdefiniowanie listy wykładowców zalogowanym użytkownikom
+\begin_layout Labeling
+\labelwidthstring default
+Wy9 System umożliwia zdefiniowanie listy dostępnych przedmiotów zalogowanym
+ użytkownikom
 \end_layout
 
-\begin_layout Enumerate
-System pozwala przypisać dowolnej liczby adresów e-mail do danego kierunku
+\begin_layout Labeling
+\labelwidthstring default
+Wy10 System umożliwia zdefiniowanie listy wykładowców zalogowanym użytkownikom
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring default
+Wy11 System pozwala przypisać dowolną liczbę adresów e-mail do danego kierunku
  zalogowanym użytkownikom
 \end_layout
 
-\begin_layout Enumerate
-System automatycznie rozsyła kody dostępu do wszystkich adresatów których
+\begin_layout Labeling
+\labelwidthstring default
+Wy12 System automatycznie rozsyła kody dostępu do wszystkich adresatów których
  e-mail jest związany z kierunkiem uruchomionej ankiety
 \end_layout
 
-\begin_layout Enumerate
-System pozwala na jednokrotne uruchomienie ankiety przez zalogowanego użytkownik
-a
+\begin_layout Labeling
+\labelwidthstring default
+Wy13 System pozwala na jednokrotne uruchomienie ankiety przez zalogowanego
+ użytkownika
 \end_layout
 
-\begin_layout Enumerate
-Uruchomione ankiety nie mogą być modyfikowane
+\begin_layout Labeling
+\labelwidthstring default
+Wy14 Uruchomione ankiety nie mogą być modyfikowane
 \end_layout
 
-\begin_layout Enumerate
-Student może wypełnić ankietę tylko jeden raz
+\begin_layout Labeling
+\labelwidthstring default
+Wy15 Student może wypełnić ankietę tylko jeden raz
 \end_layout
 
 \begin_layout Part
@@ -319,7 +338,7 @@ http://en.wikipedia.org/wiki/HTML
 \end_inset
 
  (HTML).
- Skrypty te można załączać wewnątrz kodu HTML.
+ Skrypty PHP można załączać wewnątrz kodu HTML.
 \end_layout
 
 \begin_layout Standard
@@ -355,7 +374,11 @@ http://en.wikipedia.org/wiki/SQL
 \end_inset
 
 ).
- Jest obsługiwana z poziomu języka PHP przez co jest często wykorzystywana
+ 
+\end_layout
+
+\begin_layout Standard
+Jest obsługiwana z poziomu języka PHP przez co jest często wykorzystywana
  do przechowywania danych dla aplikacji internetowych napisanych w tym języku.
 \end_layout
 
@@ -396,6 +419,18 @@ http://en.wikipedia.org/wiki/Document_Object_Model
 \end_inset
 
 ) dokumentu HTML.
+ Ułatwia także korzystanie z technologi AJAX (Asynchronous JavaScript and
+ XML
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://en.wikipedia.org/wiki/Ajax_(programming)
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -577,8 +612,187 @@ Schemat bazy danych
 Moduły aplikacji
 \end_layout
 
+\begin_layout Standard
+Aplikacja składa się z dwóch modułów:
+\end_layout
+
+\begin_layout Enumerate
+moduł administracyjny
+\end_layout
+
+\begin_layout Enumerate
+moduł ankiety
+\end_layout
+
+\begin_layout Section
+Dostęp do modułów
+\end_layout
+
+\begin_layout Standard
+Do modułu administracyjny mają dostęp tylko użytkownicy zarejestrowani w
+ systemie i identyfikujący się loginem i hasłem.
+\end_layout
+
+\begin_layout Standard
+Moduł ankiety jest dostępny dla studentów za pośrednictwem kodu generowanego
+ dla każdego z uczestników ankiety.
+\end_layout
+
+\begin_layout Section
+Moduł administracyjny
+\end_layout
+
+\begin_layout Standard
+Umożliwia on tworzenie i zarządzanie:
+\end_layout
+
+\begin_layout Itemize
+ankietami
+\end_layout
+
+\begin_layout Itemize
+użytkownikami oraz ich hasłami dostępu
+\end_layout
+
+\begin_layout Itemize
+wykładowcami
+\end_layout
+
+\begin_layout Itemize
+przedmiotami
+\end_layout
+
+\begin_layout Itemize
+mailami na które są rozsyłane kody dostępu do ankiet
+\end_layout
+
+\begin_layout Section
+Moduł ankiety
+\end_layout
+
+\begin_layout Standard
+Umożliwia wypełnienie ankiety po przez zaznaczenie odpowiedzi na podane
+ pytania oraz wybór przedmiotu i wykładowcy.
+\end_layout
+
+\begin_layout Standard
+Po wypełnieniu ankiety można ją zamknąć tym samym wysyłając wyniki do systemu
+ oraz blokując ponowny dostęp przy wykorzystaniu tego samego kodu.
+\end_layout
+
 \begin_layout Chapter
 Interfejs użytkownika
+\end_layout
+
+\begin_layout Standard
+Responsoryjny interfejs użytkownika jest oparty o technologie AJAX wykorzystując
+ wsparcie biblioteki JQuery.
+ Dzięki takiemu rozwiązaniu tylko elementy które się zmieniają na stronie
+ są przerysowane zgodnie z akcjami użytkownika.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename logowanie.pdf
+	width 100text%
+	groupId screenshot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Strona logowania
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename lista ankiet.pdf
+	width 100text%
+	groupId screenshot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lista ankiet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ankieta.pdf
+	width 100text%
+	groupId screenshot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ankieta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
