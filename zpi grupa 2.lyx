@@ -85,7 +85,7 @@ dcs
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
+\leftmargin 4cm
 \topmargin 2cm
 \rightmargin 2cm
 \bottommargin 2cm
@@ -166,11 +166,11 @@ Proponowany proces
 \end_layout
 
 \begin_layout Standard
-Wykorzystując Internet uczniowie mogli by dokonywać oceny nauczycieli po
- przez wypełnienie wcześniej przygotowanego formularza za pośrednictwem
- przeglądarki internetowej.
- System automatycznie zebrał by dane i dokonał stosownych obliczeń.
- Odpowiednio przygotowany raport były by udostępniony dla autorów ankiety.
+Wykorzystując Internet uczniowie mogliby dokonywać oceny nauczycieli poprzez
+ wypełnienie wcześniej przygotowanego formularza za pośrednictwem przeglądarki
+ internetowej.
+ System automatycznie zbierałby dane i dokonał stosownych obliczeń.
+ Odpowiednio przygotowany raport byłyby udostępniony autorom ankiety.
 \end_layout
 
 \begin_layout Standard
@@ -379,7 +379,7 @@ http://en.wikipedia.org/wiki/SQL
 
 \begin_layout Standard
 Jest obsługiwana z poziomu języka PHP przez co jest często wykorzystywana
- do przechowywania danych dla aplikacji internetowych napisanych w tym języku.
+ do przechowywania danych aplikacji internetowych napisanych w tym języku.
 \end_layout
 
 \begin_layout Section
@@ -492,7 +492,7 @@ Z każdą ankietą związany jest użytkownik który ją stworzył.
 \end_layout
 
 \begin_layout Standard
-Każda ankieta zawiera 6 pytań.
+Każda z nich zawiera 6 pytań.
  Format pytań jest zdefiniowany za pomocą tabeli 
 \noun on
 element
@@ -629,8 +629,8 @@ Dostęp do modułów
 \end_layout
 
 \begin_layout Standard
-Do modułu administracyjny mają dostęp tylko użytkownicy zarejestrowani w
- systemie i identyfikujący się loginem i hasłem.
+Do modułu administracyjnego mają dostęp tylko użytkownicy zarejestrowani
+ w systemie i identyfikujący się loginem i hasłem.
 \end_layout
 
 \begin_layout Standard
@@ -671,8 +671,8 @@ Moduł ankiety
 \end_layout
 
 \begin_layout Standard
-Umożliwia wypełnienie ankiety po przez zaznaczenie odpowiedzi na podane
- pytania oraz wybór przedmiotu i wykładowcy.
+Umożliwia wypełnienie ankiety poprzez zaznaczenie odpowiedzi na podane pytania
+ oraz wybór przedmiotu i wykładowcy.
 \end_layout
 
 \begin_layout Standard
@@ -685,7 +685,7 @@ Interfejs użytkownika
 \end_layout
 
 \begin_layout Standard
-Responsoryjny interfejs użytkownika jest oparty o technologie AJAX wykorzystując
+Responsywny interfejs użytkownika jest oparty o technologie AJAX wykorzystując
  wsparcie biblioteki JQuery.
  Dzięki takiemu rozwiązaniu tylko elementy które się zmieniają na stronie
  są przerysowane zgodnie z akcjami użytkownika.
