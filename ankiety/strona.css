@@ -1,0 +1,133 @@
+body { 
+  font: normal 16px/20px "Helvetica Neue", Helvetica, sans-serif;
+  background: rgb(237, 237, 236);
+  margin: 0; 
+  padding: 0; 
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#srodek{
+  width: 800px;
+  margin: 0 auto;
+}
+#links {
+  width: 780px;
+  margin: 0 auto;
+  background: #00CD00;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-top: 1px solid #fff;
+  font: normal 16px/20px "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  padding-left:20px;
+
+}
+
+#wrapper {
+  width: 800px;  
+  margin: 0 auto;
+  background: #fff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-top: 1px solid #fff;
+  padding-bottom: 20px;
+  float: left;
+}
+
+
+#opcje{
+	position: relative; 
+	float: left;
+	width: 160px; 
+	height:100px;
+}
+
+#zawartosc{
+	position: relative; 
+	float: left;
+	width: 780px; 	
+	margin: 10px;
+}
+
+#loguj{
+	width: 80px;
+	margin: 10px;
+	float: right;
+}
+
+h1 {
+  padding-top: 5px;
+}
+
+
+article > *{
+  margin: 20px;
+}
+
+footer  {    
+  margin: 0 auto;
+  width:800px;
+  text-align: center;
+  font: bold 12px/14px "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+
+}
+
+a:hover {color: rgb(137, 137, 236);cursor: pointer;
+	cursor: hand;} /* zmiany koloru przy najechaniu myszk¹*/
+.selected a {color: #8080ff;}
+
+
+header  {
+  width: 800px;
+  margin: 0 auto;
+}
+
+p{
+	margin:1px;
+}
+
+span{
+float:left; width:100px
+}
+.grubo {
+	background: #ffa20f;
+}
+
+
+
+.ramka{
+	background: rgba(52,125,194, 0.7);
+	padding: 10px 0px 15px 10px;
+	margin:10px 0px 0px 10px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 0px 10px 0px 10px;
+	font: bold 12px/14px "Helvetica Neue", Helvetica, sans-serif;
+	color: white;
+}
+
+.reklama{
+	background: rgba(52,125,194, 0.3);
+	padding: 10px 0px 15px 10px;
+	margin:10px 0px 0px 10px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 0px 10px 0px 10px;
+	font: bold 12px/14px "Helvetica Neue", Helvetica, sans-serif;
+	color: white;
+	width: 243px;
+	height: 100px;
+}
+.reklama:hover{
+	background: rgba(52,125,194, 0.7);
+}

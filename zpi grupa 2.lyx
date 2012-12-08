@@ -16,7 +16,7 @@
 {\Large Kierunek: Informatyka}\\[2.0cm]
 \includegraphics[width=0.15\textwidth]{./logo.png}\\[2.5cm]
 {\LARGE\@author}\\[3.0cm]
-{\huge\@title}\\[3.0cm]
+{\huge\@title}\\[2.0cm]
   \end{center}
 
   \vfill
@@ -116,7 +116,11 @@ Internetowy system wspierający przeprowadzanie okresowych ocen nauczycieli
 
 \begin_layout Author
 Jakub Pastuszek, Adam Broda, Maciej Charniuk, Sebastian Gilon, Wojciech
- Nowak
+ Nowak, Adrian
+\begin_inset space ~
+\end_inset
+
+Piotrowicz
 \end_layout
 
 \begin_layout Date
